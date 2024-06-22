@@ -1,0 +1,16 @@
+C:\Users\miche\source\repos\ColasOficina\bin\Debug\net8.0-windows\ColasOficina.exe
+C:\Users\miche\source\repos\ColasOficina\bin\Debug\net8.0-windows\ColasOficina.deps.json
+C:\Users\miche\source\repos\ColasOficina\bin\Debug\net8.0-windows\ColasOficina.runtimeconfig.json
+C:\Users\miche\source\repos\ColasOficina\bin\Debug\net8.0-windows\ColasOficina.dll
+C:\Users\miche\source\repos\ColasOficina\bin\Debug\net8.0-windows\ColasOficina.pdb
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.csproj.GenerateResource.cache
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.AssemblyInfoInputs.cache
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.AssemblyInfo.cs
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.csproj.CoreCompileInputs.cache
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.dll
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\refint\ColasOficina.dll
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.pdb
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.genruntimeconfig.cache
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ref\ColasOficina.dll
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.PantallaPrincipal.resources

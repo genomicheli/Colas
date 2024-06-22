@@ -1,0 +1,19 @@
+﻿[*.cs]
+
+# CS8618: Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
+dotnet_diagnostic.CS8618.severity = none
+
+# IDE1006: Estilos de nombres
+dotnet_diagnostic.IDE1006.severity = none
+
+# IDE0051: Quitar miembros privados no utilizados
+dotnet_diagnostic.IDE0051.severity = none
+
+# IDE0052: Quitar miembros privados no leídos
+dotnet_diagnostic.IDE0052.severity = none
+
+# IDE0044: Agregar modificador de solo lectura
+dotnet_diagnostic.IDE0044.severity = none
+
+# IDE0290: Usar constructor principal
+dotnet_diagnostic.IDE0290.severity = none
