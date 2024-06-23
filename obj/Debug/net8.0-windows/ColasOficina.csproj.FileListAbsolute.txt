@@ -14,3 +14,4 @@ C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.p
 C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.genruntimeconfig.cache
 C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ref\ColasOficina.dll
 C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.PantallaPrincipal.resources
+C:\Users\miche\source\repos\ColasOficina\obj\Debug\net8.0-windows\ColasOficina.sourcelink.json

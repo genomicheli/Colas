@@ -17,3 +17,6 @@ dotnet_diagnostic.IDE0044.severity = none
 
 # IDE0290: Usar constructor principal
 dotnet_diagnostic.IDE0290.severity = none
+
+# IDE0057: Usar el operador de intervalo
+dotnet_diagnostic.IDE0057.severity = none

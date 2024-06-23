@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\miche\\source\\repos\\ColasOficina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|C:\\Users\\miche\\source\\repos\\ColasOficina\\pantallaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|solutionrelative:pantallaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|C:\\Users\\miche\\source\\repos\\ColasOficina\\pantallaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|solutionrelative:pantallaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|C:\\Users\\miche\\source\\repos\\ColasOficina\\fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|solutionrelative:fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|c:\\users\\miche\\source\\repos\\colasoficina\\pantallaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|solutionrelative:pantallaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|c:\\users\\miche\\source\\repos\\colasoficina\\pantallaprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|solutionrelative:pantallaprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|C:\\Users\\miche\\source\\repos\\ColasOficina\\fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA6C855C-D1D7-4A33-93BF-AFE0BE14E677}|ColasOficina.csproj|solutionrelative:fila.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PantallaPrincipal.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\miche\\source\\repos\\ColasOficina\\PantallaPrincipal.Designer.cs",
-              "RelativeDocumentMoniker": "PantallaPrincipal.Designer.cs",
-              "ToolTip": "C:\\Users\\miche\\source\\repos\\ColasOficina\\PantallaPrincipal.Designer.cs",
-              "RelativeToolTip": "PantallaPrincipal.Designer.cs",
-              "ViewState": "AQIAAB0BAAAAAAAAAAD4vysBAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T22:21:27.488Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -49,14 +32,14 @@
               "RelativeDocumentMoniker": "Fila.cs",
               "ToolTip": "C:\\Users\\miche\\source\\repos\\ColasOficina\\Fila.cs",
               "RelativeToolTip": "Fila.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAACIAAAAFAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADYAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T22:54:12.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PantallaPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\miche\\source\\repos\\ColasOficina\\PantallaPrincipal.cs",
               "RelativeDocumentMoniker": "PantallaPrincipal.cs",
@@ -68,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PantallaPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\miche\\source\\repos\\ColasOficina\\PantallaPrincipal.cs",
               "RelativeDocumentMoniker": "PantallaPrincipal.cs",
               "ToolTip": "C:\\Users\\miche\\source\\repos\\ColasOficina\\PantallaPrincipal.cs",
               "RelativeToolTip": "PantallaPrincipal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAtwJ0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T05:07:18.149Z",
               "EditorCaption": ""

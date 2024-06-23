@@ -52,6 +52,8 @@
             label6 = new Label();
             btnSimular = new Button();
             groupBox3 = new GroupBox();
+            checkMas = new CheckBox();
+            checkParo = new CheckBox();
             checkImpaciente = new CheckBox();
             checkDespedir = new CheckBox();
             label16 = new Label();
@@ -59,6 +61,8 @@
             label15 = new Label();
             numPrimeraFila = new NumericUpDown();
             dgvSim = new DataGridView();
+            txtExplicación = new Label();
+            groupBox1 = new GroupBox();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numFinSatisfacción).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numFinPlanos).BeginInit();
@@ -73,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)numFilas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numPrimeraFila).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvSim).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label2
@@ -290,9 +295,9 @@
             // btnSimular
             // 
             btnSimular.BackColor = Color.MediumTurquoise;
-            btnSimular.Location = new Point(576, 126);
+            btnSimular.Location = new Point(576, 263);
             btnSimular.Name = "btnSimular";
-            btnSimular.Size = new Size(518, 179);
+            btnSimular.Size = new Size(351, 42);
             btnSimular.TabIndex = 4;
             btnSimular.Text = "Simular";
             btnSimular.UseVisualStyleBackColor = false;
@@ -300,6 +305,8 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(checkMas);
+            groupBox3.Controls.Add(checkParo);
             groupBox3.Controls.Add(checkImpaciente);
             groupBox3.Controls.Add(checkDespedir);
             groupBox3.Controls.Add(label16);
@@ -308,36 +315,60 @@
             groupBox3.Controls.Add(numPrimeraFila);
             groupBox3.Location = new Point(576, 10);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(518, 110);
+            groupBox3.Size = new Size(351, 146);
             groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
             groupBox3.Text = "Parámetros de simulación";
             // 
+            // checkMas
+            // 
+            checkMas.AutoSize = true;
+            checkMas.Location = new Point(179, 115);
+            checkMas.Name = "checkMas";
+            checkMas.Size = new Size(165, 19);
+            checkMas.TabIndex = 13;
+            checkMas.Text = "Servicio mas utilizado";
+            checkMas.UseVisualStyleBackColor = true;
+            checkMas.CheckedChanged += checkMas_CheckedChanged;
+            // 
+            // checkParo
+            // 
+            checkParo.AutoSize = true;
+            checkParo.Location = new Point(13, 115);
+            checkParo.Name = "checkParo";
+            checkParo.Size = new Size(156, 19);
+            checkParo.TabIndex = 12;
+            checkParo.Text = "Paro de inspectores\r\n";
+            checkParo.UseVisualStyleBackColor = true;
+            checkParo.CheckedChanged += checkParo_CheckedChanged;
+            // 
             // checkImpaciente
             // 
             checkImpaciente.AutoSize = true;
-            checkImpaciente.Location = new Point(264, 63);
+            checkImpaciente.Location = new Point(13, 90);
             checkImpaciente.Name = "checkImpaciente";
-            checkImpaciente.Size = new Size(104, 34);
+            checkImpaciente.Size = new Size(160, 19);
             checkImpaciente.TabIndex = 11;
-            checkImpaciente.Text = "Clientes\r\nImpacientes\r\n";
+            checkImpaciente.Text = "Clientes impacientes\r\n";
             checkImpaciente.UseVisualStyleBackColor = true;
+            checkImpaciente.CheckedChanged += checkImpaciente_CheckedChanged;
             // 
             // checkDespedir
             // 
             checkDespedir.AutoSize = true;
             checkDespedir.Font = new Font("Lucida Bright", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkDespedir.Location = new Point(264, 23);
+            checkDespedir.Location = new Point(179, 90);
             checkDespedir.Name = "checkDespedir";
-            checkDespedir.Size = new Size(174, 34);
+            checkDespedir.Size = new Size(152, 19);
             checkDespedir.TabIndex = 10;
-            checkDespedir.Text = "Despedir empleado \r\nde oficina de permisos";
+            checkDespedir.Text = "Despedir empleado";
             checkDespedir.UseVisualStyleBackColor = true;
+            checkDespedir.CheckedChanged += checkDespedir_CheckedChanged;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(12, 69);
+            label16.Location = new Point(56, 57);
             label16.Name = "label16";
             label16.Size = new Size(140, 15);
             label16.TabIndex = 8;
@@ -346,7 +377,7 @@
             // numFilas
             // 
             numFilas.Increment = new decimal(new int[] { 500, 0, 0, 0 });
-            numFilas.Location = new Point(158, 32);
+            numFilas.Location = new Point(202, 25);
             numFilas.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             numFilas.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numFilas.Name = "numFilas";
@@ -358,7 +389,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(38, 35);
+            label15.Location = new Point(82, 28);
             label15.Name = "label15";
             label15.Size = new Size(113, 15);
             label15.TabIndex = 6;
@@ -367,7 +398,7 @@
             // numPrimeraFila
             // 
             numPrimeraFila.Increment = new decimal(new int[] { 500, 0, 0, 0 });
-            numPrimeraFila.Location = new Point(158, 65);
+            numPrimeraFila.Location = new Point(202, 54);
             numPrimeraFila.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             numPrimeraFila.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numPrimeraFila.Name = "numPrimeraFila";
@@ -382,18 +413,40 @@
             dgvSim.AllowUserToResizeColumns = false;
             dgvSim.AllowUserToResizeRows = false;
             dgvSim.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSim.Location = new Point(12, 311);
+            dgvSim.Location = new Point(14, 311);
             dgvSim.Name = "dgvSim";
             dgvSim.RowHeadersVisible = false;
             dgvSim.RowHeadersWidth = 51;
-            dgvSim.Size = new Size(1082, 350);
+            dgvSim.Size = new Size(915, 324);
             dgvSim.TabIndex = 6;
+            // 
+            // txtExplicación
+            // 
+            txtExplicación.AutoSize = true;
+            txtExplicación.ForeColor = Color.MediumTurquoise;
+            txtExplicación.Location = new Point(10, 25);
+            txtExplicación.Name = "txtExplicación";
+            txtExplicación.Size = new Size(7, 30);
+            txtExplicación.TabIndex = 7;
+            txtExplicación.Text = "\r\n\r\n";
+            txtExplicación.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(txtExplicación);
+            groupBox1.Location = new Point(576, 162);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(351, 95);
+            groupBox1.TabIndex = 7;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Explicación";
             // 
             // PantallaPrincipal
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.IndianRed;
-            ClientSize = new Size(1104, 673);
+            ClientSize = new Size(937, 673);
+            Controls.Add(groupBox1);
             Controls.Add(dgvSim);
             Controls.Add(groupBox3);
             Controls.Add(btnSimular);
@@ -419,6 +472,8 @@
             ((System.ComponentModel.ISupportInitialize)numFilas).EndInit();
             ((System.ComponentModel.ISupportInitialize)numPrimeraFila).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvSim).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -455,5 +510,9 @@
         private Label label1;
         private NumericUpDown numFinSatisfacción;
         private Label label3;
+        private CheckBox checkParo;
+        private CheckBox checkMas;
+        private Label txtExplicación;
+        private GroupBox groupBox1;
     }
 }
