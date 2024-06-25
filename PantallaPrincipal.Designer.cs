@@ -112,14 +112,14 @@
             groupBox2.Controls.Add(label6);
             groupBox2.Location = new Point(14, 10);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(556, 295);
+            groupBox2.Size = new Size(1210, 191);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
             groupBox2.Text = "Eventos";
             // 
             // numFinSatisfacción
             // 
-            numFinSatisfacción.Location = new Point(323, 256);
+            numFinSatisfacción.Location = new Point(987, 132);
             numFinSatisfacción.Name = "numFinSatisfacción";
             numFinSatisfacción.Size = new Size(92, 23);
             numFinSatisfacción.TabIndex = 23;
@@ -128,37 +128,37 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(152, 260);
+            label3.Location = new Point(890, 129);
             label3.Name = "label3";
-            label3.Size = new Size(167, 15);
+            label3.Size = new Size(91, 30);
             label3.TabIndex = 22;
-            label3.Text = "fin_atención_satisfacción";
+            label3.Text = "fin_atención_\r\nsatisfacción";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.MediumTurquoise;
-            label1.Location = new Point(99, 202);
+            label1.Location = new Point(62, 137);
             label1.Name = "label1";
-            label1.Size = new Size(353, 45);
+            label1.Size = new Size(817, 15);
             label1.TabIndex = 26;
-            label1.Text = "Se ha creado una oficina de analisis de satisfacción\r\nporque la gente se queja mucho de los empleados de \r\ninspección de obras. Cuenta con 2 sevidores.";
+            label1.Text = "Se ha creado una oficina de analisis de satisfacción porque la gente se queja mucho de los empleados de inspección de obras. \r\n";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.MediumTurquoise;
-            label7.Location = new Point(119, 21);
+            label7.Location = new Point(183, 36);
             label7.Name = "label7";
-            label7.Size = new Size(314, 45);
+            label7.Size = new Size(772, 15);
             label7.TabIndex = 4;
-            label7.Text = "TODOS los eventos responden a \r\nuna distribución exponencial negativa,\r\ncon parámetro lambda, medido en clientes/hora.\r\n";
+            label7.Text = "TODOS los eventos responden a una distribución exponencial negativa, con parámetro lambda, medido en clientes/hora.\r\n";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // numFinPlanos
             // 
-            numFinPlanos.Location = new Point(448, 107);
+            numFinPlanos.Location = new Point(470, 95);
             numFinPlanos.Name = "numFinPlanos";
             numFinPlanos.Size = new Size(92, 23);
             numFinPlanos.TabIndex = 25;
@@ -167,7 +167,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(310, 111);
+            label10.Location = new Point(332, 99);
             label10.Name = "label10";
             label10.Size = new Size(133, 15);
             label10.TabIndex = 24;
@@ -175,7 +175,7 @@
             // 
             // numFinObras
             // 
-            numFinObras.Location = new Point(448, 136);
+            numFinObras.Location = new Point(716, 95);
             numFinObras.Name = "numFinObras";
             numFinObras.Size = new Size(92, 23);
             numFinObras.TabIndex = 23;
@@ -184,7 +184,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(316, 140);
+            label9.Location = new Point(584, 99);
             label9.Name = "label9";
             label9.Size = new Size(127, 15);
             label9.TabIndex = 22;
@@ -192,7 +192,7 @@
             // 
             // numFinNormativa
             // 
-            numFinNormativa.Location = new Point(448, 165);
+            numFinNormativa.Location = new Point(987, 93);
             numFinNormativa.Name = "numFinNormativa";
             numFinNormativa.Size = new Size(92, 23);
             numFinNormativa.TabIndex = 21;
@@ -201,7 +201,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(290, 169);
+            label8.Location = new Point(829, 97);
             label8.Name = "label8";
             label8.Size = new Size(153, 15);
             label8.TabIndex = 20;
@@ -209,7 +209,7 @@
             // 
             // numLlegadaPlanos
             // 
-            numLlegadaPlanos.Location = new Point(190, 107);
+            numLlegadaPlanos.Location = new Point(470, 60);
             numLlegadaPlanos.Name = "numLlegadaPlanos";
             numLlegadaPlanos.Size = new Size(92, 23);
             numLlegadaPlanos.TabIndex = 17;
@@ -218,7 +218,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(38, 111);
+            label14.Location = new Point(318, 64);
             label14.Name = "label14";
             label14.Size = new Size(146, 15);
             label14.TabIndex = 16;
@@ -226,7 +226,7 @@
             // 
             // numLlegadaObras
             // 
-            numLlegadaObras.Location = new Point(190, 136);
+            numLlegadaObras.Location = new Point(716, 60);
             numLlegadaObras.Name = "numLlegadaObras";
             numLlegadaObras.Size = new Size(92, 23);
             numLlegadaObras.TabIndex = 15;
@@ -235,7 +235,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(44, 140);
+            label13.Location = new Point(570, 64);
             label13.Name = "label13";
             label13.Size = new Size(140, 15);
             label13.TabIndex = 14;
@@ -243,7 +243,7 @@
             // 
             // numLlegadaNormativa
             // 
-            numLlegadaNormativa.Location = new Point(190, 165);
+            numLlegadaNormativa.Location = new Point(987, 60);
             numLlegadaNormativa.Name = "numLlegadaNormativa";
             numLlegadaNormativa.Size = new Size(92, 23);
             numLlegadaNormativa.TabIndex = 13;
@@ -252,7 +252,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(18, 169);
+            label12.Location = new Point(815, 64);
             label12.Name = "label12";
             label12.Size = new Size(166, 15);
             label12.TabIndex = 12;
@@ -260,7 +260,7 @@
             // 
             // numFinPermisos
             // 
-            numFinPermisos.Location = new Point(448, 78);
+            numFinPermisos.Location = new Point(220, 93);
             numFinPermisos.Name = "numFinPermisos";
             numFinPermisos.Size = new Size(92, 23);
             numFinPermisos.TabIndex = 11;
@@ -269,7 +269,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(294, 82);
+            label11.Location = new Point(66, 97);
             label11.Name = "label11";
             label11.Size = new Size(149, 15);
             label11.TabIndex = 10;
@@ -277,7 +277,7 @@
             // 
             // numLlegadaPermisos
             // 
-            numLlegadaPermisos.Location = new Point(190, 78);
+            numLlegadaPermisos.Location = new Point(220, 60);
             numLlegadaPermisos.Name = "numLlegadaPermisos";
             numLlegadaPermisos.Size = new Size(92, 23);
             numLlegadaPermisos.TabIndex = 1;
@@ -286,7 +286,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(22, 82);
+            label6.Location = new Point(52, 64);
             label6.Name = "label6";
             label6.Size = new Size(162, 15);
             label6.TabIndex = 0;
@@ -295,9 +295,9 @@
             // btnSimular
             // 
             btnSimular.BackColor = Color.MediumTurquoise;
-            btnSimular.Location = new Point(576, 263);
+            btnSimular.Location = new Point(1665, 118);
             btnSimular.Name = "btnSimular";
-            btnSimular.Size = new Size(351, 42);
+            btnSimular.Size = new Size(226, 83);
             btnSimular.TabIndex = 4;
             btnSimular.Text = "Simular";
             btnSimular.UseVisualStyleBackColor = false;
@@ -313,9 +313,9 @@
             groupBox3.Controls.Add(numFilas);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(numPrimeraFila);
-            groupBox3.Location = new Point(576, 10);
+            groupBox3.Location = new Point(1230, 12);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(351, 146);
+            groupBox3.Size = new Size(660, 101);
             groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
             groupBox3.Text = "Parámetros de simulación";
@@ -323,7 +323,7 @@
             // checkMas
             // 
             checkMas.AutoSize = true;
-            checkMas.Location = new Point(179, 115);
+            checkMas.Location = new Point(491, 65);
             checkMas.Name = "checkMas";
             checkMas.Size = new Size(165, 19);
             checkMas.TabIndex = 13;
@@ -334,7 +334,7 @@
             // checkParo
             // 
             checkParo.AutoSize = true;
-            checkParo.Location = new Point(13, 115);
+            checkParo.Location = new Point(329, 65);
             checkParo.Name = "checkParo";
             checkParo.Size = new Size(156, 19);
             checkParo.TabIndex = 12;
@@ -345,7 +345,7 @@
             // checkImpaciente
             // 
             checkImpaciente.AutoSize = true;
-            checkImpaciente.Location = new Point(13, 90);
+            checkImpaciente.Location = new Point(5, 65);
             checkImpaciente.Name = "checkImpaciente";
             checkImpaciente.Size = new Size(160, 19);
             checkImpaciente.TabIndex = 11;
@@ -357,7 +357,7 @@
             // 
             checkDespedir.AutoSize = true;
             checkDespedir.Font = new Font("Lucida Bright", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkDespedir.Location = new Point(179, 90);
+            checkDespedir.Location = new Point(171, 65);
             checkDespedir.Name = "checkDespedir";
             checkDespedir.Size = new Size(152, 19);
             checkDespedir.TabIndex = 10;
@@ -368,7 +368,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(56, 57);
+            label16.Location = new Point(313, 30);
             label16.Name = "label16";
             label16.Size = new Size(140, 15);
             label16.TabIndex = 8;
@@ -377,19 +377,19 @@
             // numFilas
             // 
             numFilas.Increment = new decimal(new int[] { 500, 0, 0, 0 });
-            numFilas.Location = new Point(202, 25);
+            numFilas.Location = new Point(214, 27);
             numFilas.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             numFilas.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numFilas.Name = "numFilas";
             numFilas.Size = new Size(88, 23);
             numFilas.TabIndex = 7;
-            numFilas.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            numFilas.Value = new decimal(new int[] { 100, 0, 0, 0 });
             numFilas.ValueChanged += numFilas_ValueChanged;
             // 
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(82, 28);
+            label15.Location = new Point(94, 30);
             label15.Name = "label15";
             label15.Size = new Size(113, 15);
             label15.TabIndex = 6;
@@ -398,7 +398,7 @@
             // numPrimeraFila
             // 
             numPrimeraFila.Increment = new decimal(new int[] { 500, 0, 0, 0 });
-            numPrimeraFila.Location = new Point(202, 54);
+            numPrimeraFila.Location = new Point(459, 27);
             numPrimeraFila.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             numPrimeraFila.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numPrimeraFila.Name = "numPrimeraFila";
@@ -413,11 +413,11 @@
             dgvSim.AllowUserToResizeColumns = false;
             dgvSim.AllowUserToResizeRows = false;
             dgvSim.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSim.Location = new Point(14, 311);
+            dgvSim.Location = new Point(14, 207);
             dgvSim.Name = "dgvSim";
             dgvSim.RowHeadersVisible = false;
             dgvSim.RowHeadersWidth = 51;
-            dgvSim.Size = new Size(915, 324);
+            dgvSim.Size = new Size(1876, 754);
             dgvSim.TabIndex = 6;
             // 
             // txtExplicación
@@ -434,9 +434,9 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(txtExplicación);
-            groupBox1.Location = new Point(576, 162);
+            groupBox1.Location = new Point(1230, 113);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(351, 95);
+            groupBox1.Size = new Size(429, 88);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             groupBox1.Text = "Explicación";
@@ -445,11 +445,11 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.IndianRed;
-            ClientSize = new Size(937, 673);
+            ClientSize = new Size(1902, 973);
             Controls.Add(groupBox1);
+            Controls.Add(btnSimular);
             Controls.Add(dgvSim);
             Controls.Add(groupBox3);
-            Controls.Add(btnSimular);
             Controls.Add(groupBox2);
             Controls.Add(label2);
             Font = new Font("Lucida Bright", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);

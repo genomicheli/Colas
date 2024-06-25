@@ -7,11 +7,17 @@ namespace ColasOficina
 
         private double[] tasaLlegada;
         private double[] tasaAtención;
+        private double tasaAtenciónAnalista;
 
         private bool sonClientesImpacientes;
         private bool despidieronAlEmpleado;
         private bool hayParoInspectores;
         private bool verServicioMasUtilizado;
+
+        private int contadorClientes;
+
+        private Fila actual;
+        private Fila anterior;
         public PantallaPrincipal()
         {
             InitializeComponent();
@@ -94,11 +100,22 @@ namespace ColasOficina
                     dgvSim.Columns.Add($"Estado_Inspector_{i}", $"Estado Inspector {i}");
                 }
             }
+
             dgvSim.Columns.Add($"Cola_Consultoría", $"Cola Consultoría");
             for (int i = 1; i <= 2; i++)
             {
                 dgvSim.Columns.Add($"Estado_Consultor_{i}", $"Estado Consultor {i}");
             }
+
+            if (!hayParoInspectores)
+            {
+                dgvSim.Columns.Add($"Cola_Analisis", $"Cola Análisis");
+                for (int i = 1; i <= 2; i++)
+                {
+                    dgvSim.Columns.Add($"Estado_Analista_{i}", $"Estado Analista {i}");
+                }
+            }
+            
 
             // Estadisticas.
 
@@ -114,40 +131,61 @@ namespace ColasOficina
                     dgvSim.Columns.Add(columnName, columnHeader);
                 }
             }
-
-            // Clientes.
-
-            for (int i = 1; i <= 20; i++)
-            {
-                dgvSim.Columns.Add($"Estado_Cliente_{i}", $"Estado Cliente {i}");
-                dgvSim.Columns.Add($"Hora_Llegada_Cliente{i}", $"Hora Llegada");
-                dgvSim.Columns.Add($"Tipo_Servidor_Cliente{i}", $"Tipo Servidor");
-                dgvSim.Columns.Add($"Numero_Servidor_Cliente{i}", $"Numero Servidor");
-            }
-
         }
         private void AsignarValores()
         {
             filasParaSimular = (int)numFilas.Value;
             primeraFilaParaSimular = (int)numPrimeraFila.Value;
             tasaLlegada = [(double)numLlegadaPermisos.Value, (double)numLlegadaPlanos.Value, (double)numLlegadaObras.Value, (double)numLlegadaNormativa.Value];
-            tasaAtención = [(double)numFinPermisos.Value, (double)numFinPlanos.Value, (double)numFinObras.Value, (double)numFinNormativa.Value, (double)numFinSatisfacción.Value];
+            tasaAtención = [(double)numFinPermisos.Value, (double)numFinPlanos.Value, (double)numFinObras.Value, (double)numFinNormativa.Value];
+            tasaAtenciónAnalista = (double)numFinSatisfacción.Value;
             sonClientesImpacientes = checkImpaciente.Checked;
             despidieronAlEmpleado = checkDespedir.Checked;
             hayParoInspectores = checkParo.Checked;
             verServicioMasUtilizado = checkMas.Checked;
+            contadorClientes = 0;
+            actual = new Fila(determinarCantidadEmpleados(), hayParoInspectores);
         }
         private void btnSimular_Click(object sender, EventArgs e)
         {
             AsignarValores();
             GenerarColumnasTabla();
+            Iniciar();
         }
-
+        private void Iniciar()
+        {
+            for(int i = 1; i <= filasParaSimular; i++)
+            {
+                actual.limpiarValoresNoRecurrentes();
+                if (i == 1)
+                {
+                    actual.generarProximaLlegada(tasaLlegada);
+                    
+                }
+                else
+                {
+                    actual.determinarProximoEvento(anterior, sonClientesImpacientes, hayParoInspectores, tasaLlegada, tasaAtención, tasaAtenciónAnalista);
+                }
+                anterior = actual;
+                AgregarColumnasClientes(actual); 
+                dgvSim.Rows.Add(actual.ConvertirAFila(hayParoInspectores));
+            }
+        }
+        private void AgregarColumnasClientes(Fila fila)
+        {
+            if (fila.hayNuevosClientes(contadorClientes))
+            {
+                contadorClientes++;
+                dgvSim.Columns.Add($"Estado_cliente_{contadorClientes}", $"Estado Cliente {contadorClientes}");
+                dgvSim.Columns.Add($"Hora_Llegada_Cliente_{contadorClientes}", "Hora Llegada");
+                dgvSim.Columns.Add($"Servicio_Cliente_{contadorClientes}", "Servicio");
+                dgvSim.Columns.Add($"Numero_Servidor_{contadorClientes}", "Numero Servidor");
+            }
+        }
         private int determinarCantidadEmpleados()
         {
             return despidieronAlEmpleado? 3 : 4;
         }
-
         private void UpdateExplanationText()
         {
             // Lista para almacenar las explicaciones seleccionadas
@@ -193,8 +231,6 @@ namespace ColasOficina
 
             AdjustLabelToCenter(txtExplicación, groupBox1);
         }
-
-        // Método para capitalizar la primera letra de una oración
         private static string CapitalizeFirstLetter(string text)
         {
             if (string.IsNullOrEmpty(text))
@@ -203,7 +239,6 @@ namespace ColasOficina
             }
             return char.ToUpper(text[0]) + text.Substring(1);
         }
-
         private static void AdjustLabelToCenter(Label label, GroupBox groupBox)
         {
             // Ajustar el tamaño del label al contenido
@@ -219,23 +254,18 @@ namespace ColasOficina
             // Establecer la nueva ubicación del label
             label.Location = new Point(newX, newY);
         }
-
-        // Llamar a este método en el evento CheckedChanged de cada checkbox
         private void checkDespedir_CheckedChanged(object sender, EventArgs e)
         {
             UpdateExplanationText();
         }
-
         private void checkImpaciente_CheckedChanged(object sender, EventArgs e)
         {
             UpdateExplanationText();
         }
-
         private void checkMas_CheckedChanged(object sender, EventArgs e)
         {
             UpdateExplanationText();
         }
-
         private void checkParo_CheckedChanged(object sender, EventArgs e)
         {
             UpdateExplanationText();
